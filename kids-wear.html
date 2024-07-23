@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kid's Wear</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.k-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+ 
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.he{
+  padding-left: 37%;
+}
+.home{
+  padding-left: 50%;
+  color: white;
+  size: 5px;
+  text-decoration: none;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+</head>
+<body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+<div class="k-section">
+  <h1 class="he">Kid's Wear<a href="kid-section.html" class="home">Back</a></h1>
+ 
+  </div>
+<div class="row">
+<div class="column">
+    <div class="card">
+      <img src="k1.jpeg" class="center" style="width: 42%;">
+      <div class="container">
+        <h2>Baby Boy Blazer</h2>
+        <p class="title">₹ 799.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+        <div id="snackbar">Added to Cart Successfully.</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k2.webp" class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Coral pink Brocade choli</h2>
+        <p class="title">₹ 899.00 </p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k3.jpeg"class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Plazzo Pair</h2>
+        <p class="title">₹ 599.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k4.jpeg"class="center" style="width: 32%;">
+      <div class="container">
+        <h2>Wedding Sharara Pair</h2>
+        <p class="title">₹ 599.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k5.jpg" class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Boys Shorts Pair</h2>
+        <p class="title">₹ 499.00</p>
+      
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k6.webp" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>kids Casual Wear</h2>
+        <p class="title">₹ 599.00</p>
+      
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k7.jpeg" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Baby Frock</h2>
+        <p class="title">₹ 599.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k8.avif" class="center" style="width: 45%;">
+      <div class="container">
+        <h2>Best Ethic Dresses</h2>
+        <p class="title">₹ 599.00</p>
+    
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div> <div class="column">
+    <div class="card">
+      <img src="k9.webp"  class="center" style="width: 33%;">
+      <div class="container">
+        <h2>Navy Blue Indo western Sherwani</h2>
+        <p class="title">₹ 899.00</p>
+    
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k10.webp"  class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Boys Kurta Set</h2>
+        <p class="title">₹ 699.00</p>
+      
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="k11.webp" class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Crepe Floral Printed Dress</h2>
+        <p class="title">₹ 599.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k12.jpeg" class="center" style="width: 60%;">
+      <div class="container">
+        <h2>Toddler Dress</h2>
+        <p class="title">₹ 599.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k13.webp" class="center" style="width: 45%;">
+      <div class="container">
+        <h2>Printed Frock</h2>
+        <p class="title">₹ 399.00</p>
+   
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k14.jpeg" class="center" style="width: 33%;">
+      <div class="container">
+        <h2>Purple Musleen Long Dress</h2>
+        <p class="title">₹ 599.00</p>
+      
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="k15.webp" class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Slik Saree</h2>
+        <p class="title">₹ 500.00</p>
+    
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+
+ 
+</div>
+</body>
+</html>

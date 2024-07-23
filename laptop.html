@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Laptop and Assesories</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.l-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+ 
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.he{
+  padding-left: 37%;
+}
+.home{
+  padding-left: 50%;
+  color: white;
+  size: 5px;
+  text-decoration: none;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+</head>
+<body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+<div class="l-section">
+  <h1 class="he">Laptop and Assesories<a href="Electronics.html" class="home">Back</a></h1>
+  
+  </div>
+<div class="row">
+<div class="column">
+    <div class="card">
+      <img src="l1.jpeg"class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Toshiba PortegeZ930</h2>
+        <p class="title">₹ 19,999.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+        <div id="snackbar">Added to Cart Successfully.</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="l2.jpg" class="center" style="width: 36%;">
+      <div class="container">
+        <h2>Toshiba Tecra M11 Laptop</h2>
+        <p class="title">₹ 22,000.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="l3.webp" class="center" style="width: 83%;">
+      <div class="container">
+        <h2>Apple M2 Pro</h2>
+        <p class="title">₹ 1,18,490.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="l4.jpg" class="center" style="width: 47%;">
+      <div class="container">
+        <h2>Dell Inspiron </h2>
+        <p class="title">₹ 57,190.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="l5.jpg" class="center" style="width: 85%;">
+      <div class="container">
+        <h2>Dell XPS 12</h2>
+        <p class="title">₹ 29,999.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="l6.jpeg" class="center" style="width: 59%;">
+      <div class="container">
+        <h2>HP EliteBook </h2>
+        <p class="title">₹ 34,990.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="l7.webp" class="center" style="width: 29%;">
+      <div class="container">
+        <h2>HP Spectre Intel Core i5</h2>
+        <p class="title">₹ 41,800.00</p>
+  
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="l8.jpg" class="center" style="width: 36%;">
+      <div class="container">
+        <h2>Acer EX215-51-57HS Notebook </h2>
+        <p class="title">₹ 33,990.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div> <div class="column">
+    <div class="card">
+      <img src="l9.jpg"class="center" style="width: 20%;">
+      <div class="container">
+        <h2>Toshiba Satellite B552</h2>
+        <p class="title">₹ 11,499.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="l10.jpg"  class="center" style="width: 28%;">
+      <div class="container">
+        <h2>Microsoft Surface Laptop</h2>
+        <p class="title">₹ 60,990.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  
+
+ 
+</div>
+</body>
+</html>

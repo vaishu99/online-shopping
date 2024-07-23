@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GrowMore</title>
+  <link rel="icon" href= "icon.png" type="image/x-icon">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+ body {
+  font-family: Arial;
+  margin: 0;
+  
+}
+   
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 60px;
+    margin-right: 20px;
+       /* if you want it vertically middle of the navbar. */
+}
+
+
+#navigation-container {
+    position: sticky;
+    background-color: #3D3028;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 8px 15px;
+    opacity: 0.7;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5px;
+}
+
+
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.styled-select {
+  margin-top: 13px;
+  width: 100px;
+  height: 30px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;  
+  display: inline-block;
+  position: relative;
+  text-decoration: none;     
+  opacity: 0.7;
+  background-color: #3D3028;
+  
+  
+}
+a:hover {
+  color: wheat;
+  text-decoration: none;
+}
+
+.styled-select select {
+  background: transparent;
+  -webkit-appearance: none;
+  width: 100px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  height: 30px;
+  position: absolute;  
+  font-size: 20px;
+  background-color: #3D3028;
+  border: none;
+  
+}
+.styled-select-clothes {
+  margin-top: 13px;
+  width: 100px;
+  height: 30px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;  
+  display: inline-block;
+  position: relative;
+  text-decoration: none;     
+  opacity: 0.7;
+  background-color: #3D3028;
+  
+  
+}
+
+.styled-select-clothes select {
+  background: transparent;
+  -webkit-appearance: none;
+  width: 100px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  height: 30px;
+  
+  font-size: 20px;
+  background-color: #787F8F;
+  border: none;
+  
+}
+#menu-container {
+    
+    background-color: #787F8F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align:-webkit-baseline-middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  width: 100%;
+}
+
+
+.h{
+  height: 350px;
+
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  /* padding: 16px; */
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+html2 {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column2 {
+  float: left;
+  width: 22%;
+  margin-left: 40px;
+  margin-top: 16px;
+  margin-right: 0%;
+  margin-bottom: 16px;
+  
+  padding: 0 8px;
+}
+
+#column3{
+  float: left;
+  width: 98%;
+  
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ 
+}
+.hk-section {
+ 
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container2 {
+  
+}
+.container2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+@media screen and (max-width: 650px) {
+  .column2 {
+    width: 98%;
+    display: block;
+  }
+}
+
+.img2{
+  height: 140px ; 
+  width: 100px;
+  object-fit: fill;
+  padding-left: 20px;
+  padding-bottom: 17px;
+ 
+}
+
+/* scroll image */
+
+div.scroll-container {
+  background-color: #ffffff;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+
+.aboutp{
+  text-align: center;
+  font-size: 35px;
+  margin-top: 69%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+  
+  #au-container {
+    
+    background-color: #787F8F;
+    display: block;
+    
+    
+}
+.au-con{
+  margin-left: 35px;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contactusp{
+  text-align: center;
+  font-size: 35px;
+  position: relative;
+  color: #ffffff;
+  opacity: 0.8;
+}
+  
+  #cu-container {
+    
+    background-color: #787F8F;
+    display: block;
+    
+    
+}
+.cu-con{
+  margin-left: 35px;
+  column-width: 150px;
+  column-gap: 150px;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.line {
+  column-width: 150px;
+  background-color: #787F8F;
+  color: #ffffff;
+  opacity: 0.8;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 80px;
+}
+
+</style>
+    <head>
+        <link href="./answer.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="navigation-bar">     
+      
+          <div id="navigation-container">
+      
+            <img class="logo" src="transparent-logo.png">
+      
+            <ul>
+              <li><a href="#">Home</a></li>
+              
+              <div class="styled-select">
+                <select property="voucherCategoryClass">
+                  <option value="0">country ▼</option>
+              <option value="1">India </option>
+              <option value="2">Afghanistan </option>
+              <option value="3">Bangladesh</option>
+              <option value="4">China</option>
+              <option value="5">Germany</option>
+              <option value="6">Malaysia </option>
+              <option value="7">Netherlands </option>
+              <option value="8">Russia</option>
+              <option value="9">Singapore</option>
+              <option value="10">Thailand </option>
+              <option value="11">United Kingdom </option>
+            </select>
+              </div>
+      
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">My Cart</a></li>
+            </ul>
+          </div>
+
+
+      <div class="Menu">
+
+
+        <div id="menu-container">
+          <ul>
+            <li><a href="Home & Kitchen.html">Home & Kitchen</a></li>
+            <li><a href="grocery.html">Grocery</a></li>
+            <li><a href="Book.html">Books</a></li>
+            <li><a href="women-section.html">Women's Section</a></li>
+            <li><a href="men-section.html">Men's Section</a></li>
+            <li><a href="kid-section.html">Kid's Section</a></li>
+            <li><a href="Electronics.html">Electronics</a></li>
+            <li><a href="Toys & Games.html">Toys & Games</a></li>
+            <li><a href="Handicraft.html">Handicrafts</a></li>
+            <li><a href="Bakery & Dairy.html">Bakery & Dairy </a></li>
+            
+           
+        </div>
+
+
+        
+        <div class="container">
+          <div class="mySlides">
+            
+            <img src="slide1.jpg" class="h" style="width: 100%;">
+          </div>
+        
+          <div class="mySlides">
+            
+            <img src="sl2.jpg" class="h" style="width:100%">
+          </div>
+        
+         
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+         
+          </div>
+        
+          
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+        <!-- different boxes with four images -->
+          
+        <div class="row">
+          <div class="column2">
+              <div class="card">
+                
+                <p style="font-weight: bold; font-size: large; padding-left: 17px;">Handicraft for your home | Upto 50% off </p>
+                <img src="Hc5.jpeg" class="img2" style="width: 40%; " >
+                <img src="Hc7.jpeg"  class="img2"  style="width: 40%;">
+                <img src="Hc10.jpeg" class="img2"  style="width: 40%;">
+                <img src="Hc11.jpeg" class="img2"  style="width: 40%;">
+    
+              </div>
+            </div>
+
+          <div class="column2">
+              <div class="card">
+                <p style="font-weight: bold; font-size: large; padding-left: 17px;">Grocery for your home | Upto 65% off </p>
+                <img src="g11.jpeg" class="img2" style="width: 40%; ">
+                <img src="g12.jpg"  class="img2"  style="width: 40%;">
+                <img src="g6.jpeg" class="img2"  style="width: 40%;">
+                <img src="g10.jpeg" class="img2"  style="width: 40%;">
+              </div>
+          </div>
+
+          <div class="column2">
+            <div class="card">
+              <p style="font-weight: bold; font-size: large; padding-left: 17px;">Books collection for your home | Upto 50% off </p>
+              <img src="book-3.jpeg" class="img2" style="width: 40%; ">
+              <img src="book-5.jpeg"  class="img2"  style="width: 40%;">
+              <img src="book-11.jpg" class="img2"  style="width: 40%;">
+              <img src="book-12.jpg" class="img2"  style="width: 40%;">
+            </div>
+        </div>
+
+        <div class="column2">
+          <div class="card">
+            <p style="font-weight: bold; font-size: large; padding-left: 17px;">Womens collection for your home | Upto 60% off </p>
+            <img src="w9.webp" class="img2" style="width: 40%; ">
+            <img src="w1.webp"  class="img2"  style="width: 40%;">
+            <img src="ws3.avif" class="img2"  style="width: 40%;">
+            <img src="mk14.jpg" class="img2"  style="width: 40%;">
+          </div>
+        </div>
+        
+
+        <div class="column2">
+          <div class="card">
+            <p style="font-weight: bold; font-size: large; padding-left: 17px;">Mens collection for your home | Upto 60% off </p>
+            <img src="m5.webp" class="img2" style="width: 40%; ">
+            <img src="m7.avif"  class="img2"  style="width: 40%;">
+            <img src="ms2.jpg" class="img2"  style="width: 40%;">
+            <img src="ms12.webp" class="img2"  style="width: 40%;">
+          </div>
+        </div>
+
+        <div class="column2">
+          <div class="card">
+            <p style="font-weight: bold; font-size: large; padding-left: 17px;">Kids collection for your home | Upto 60% off </p>
+            <img src="k13.webp" class="img2" style="width: 40%; ">
+            <img src="k1.jpeg"  class="img2"  style="width: 40%;">
+            <img src="ks9.jpg" class="img2"  style="width: 40%;">
+            <img src="ks11.jpeg" class="img2"  style="width: 40%;">
+          </div>
+        </div>
+
+        <div class="column2">
+          <div class="card">
+            <p style="font-weight: bold; font-size: large; padding-left: 17px;">Electronics appliances for your home | Upto 55% off </p>
+            <img src="s2.jpg" class="img2" style="width: 40%; ">
+            <img src="p13.jpeg"  class="img2"  style="width: 40%;">
+            <img src="s15.jpeg" class="img2"  style="width: 40%;">
+            <img src="p9.jpeg" class="img2"  style="width: 40%;">
+          </div>
+        </div>
+
+
+        <div class="column2">
+          <div class="card">
+            <p style="font-weight: bold; font-size: large; padding-left: 17px;">Bakery production for your home | Upto 60% off </p>
+            <img src="Bd2.webp" class="img2" style="width: 40%; ">
+            <img src="Bd9.webp"  class="img2"  style="width: 40%;">
+            <img src="Bd10.webp" class="img2"  style="width: 40%;">
+            <img src="Bd13.webp" class="img2"  style="width: 40%;">
+          </div>
+        </div>
+
+        <!-- Scroll image -->
+        
+        <div class="column2" id="column3">
+        <div class="scroll-container">
+          <p style="font-weight: bold; font-size: 30px;">Best Selling Kitchen Products|Upto 1999/-</p>
+          <img src="scroll1.jpg" width="150" height="200">
+          <img src="scroll2.jpg"  width="150" height="200">
+          <img src="scroll3.jpg"  width="60" height="200">
+          <img src="scroll4.jpg"  width="150" height="200">
+          <img src="scrolls.jpg"  width="150" height="200">
+          <img src="scroll6.jpg"  width="150" height="200">
+          <img src="scroll7.jpg"  width="150" height="200">
+          <img src="scroll8.jpg"  width="150" height="200">
+          <img src="scroll9.jpg"  width="150" height="200">
+          <img src="scroll10.jpg"  width="150" height="200">
+          <img src="scroll11.jpg"  width="150" height="200">
+          <img src="scroll12.jpg"  width="150" height="200">
+          <img src="scroll13.jpg"  width="150" height="200">
+          <img src="scroll14.jpg"  width="150" height="200">
+          <img src="scroll15.jpg"  width="150" height="200">
+        </div>
+        </div>
+
+        <div class="aboutus">
+          <div id="au-container">
+            <p class="aboutp">About Us</p>
+          </div>
+          <div>
+            <p class="au-con"><b>Welcome to GrowMore!</b><br><br>
+
+              At GrowMore, we're passionate about delivering an exceptional online shopping experience tailored to our customers' needs. With a wide range of products spanning from Home Appliances to Electronics, we strive to provide something for everyone.<br>
+              <br>
+              Our journey began with a simple idea: to create a platform where customers can find high-quality products at competitive prices, all in one convenient place. Since our inception, we've been dedicated to building strong relationships with both <br>our suppliers and customers, ensuring that each interaction with us is seamless and satisfying.<br>
+              <br>
+              What sets us apart is our commitment to excellence in every aspect of our business. From the careful selection of products to the user-friendly design of our website, we prioritize your satisfaction above all else. Our team works tirelessly to curate a diverse collection of products that meet the highest standards of quality and affordability.<br>
+              <br>
+              But we're not just about selling products; we're about building a community. We value your feedback and actively listen to your suggestions to improve our services continuously. Whether you're a seasoned shopper or new to online retail, we<br> are here to assist you every step of the way.<br>
+              <br>
+              Thank you for choosing GrowMore. <br><br>We look forward to serving you and becoming your preferred destination for all your shopping needs.
+              <br><br>
+              Happy shopping!<br>
+              
+              <b>Sakshi & Vaishnavi</b><br>
+              <b>GrowMore</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="contactus">
+          <div id="cu-container">
+            <p class="contactusp">Contact Us</p>
+          </div>
+          <div>
+            <p class="cu-con"><b>India +91 9876789678</b><br>
+                              <b>US +89 578-35-54</b><br>
+                              <b>Japan +56 97-45-9088</b><br>
+                              <b>Europe +78 66-56-44</b><br>
+                              <b>Uk +23 66-1-34-5</b><br>
+                              <b>China +09 33-1-67-8</b><br>
+                              <b>Canada +11 556-777-88</b><br>
+                              <b>France +45 9457758</b><br>
+                              <b>German +52 56-23-5456</b><br>
+
+                              <b>Pataya +27 6578-544</b>
+                              
+                              
+                             
+                              
+
+              
+            </p>
+          </div>
+        </div>
+
+        <div class="line">
+          Books<br> Home Appliances<br>
+          Electronics<br>Laptops<br>Cameras<br>Phones<br>Watch<br>Clothes<br>Makeup<br>Men's Wear<br>Women's Wear<br>Utensils<br>
+          Kid's Wear<br>FootWear<br>Mixer<br>Novels<br>Dairy<br>Bakery
+          
+          </div>
+          <p style="text-align: center; background-color: #787F8F; color: #ffffff; opacity: 0.8;">©2023-2024,GrowMore.com,Terms & Conditions</p>          
+
+       
+
+       </div>        
+      </body>
+      </html>
+     
