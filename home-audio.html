@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Audio</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.ha-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+ 
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.he{
+  padding-left: 37%;
+}
+.home{
+  padding-left: 50%;
+  color: white;
+  size: 5px;
+  text-decoration: none;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+</head>
+<body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+<div class="ha-section">
+  <h1 class="he">Home Audio<a href="Electronics.html" class="home">Back</a></h1>
+
+  </div>
+<div class="row">
+<div class="column">
+    <div class="card">
+      <img src="ha1.jpeg"class="center" style="width: 65%;">
+      <div class="container">
+        <h2> Multimedia Speaker</h2>
+        <p class="title">₹ 720.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+        <div id="snackbar">Added to Cart Successfully.</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="ha2.jpeg" class="center" style="width: 34%;">
+      <div class="container">
+        <h2>Home Audio Loud Speaker</h2>
+        <p class="title">₹ 720.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="ha3.jpeg" class="center" style="width: 45%;">
+      <div class="container">
+        <h2>Home Theater</h2>
+        <p class="title">₹ 720.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="ha4.jpeg" class="center" style="width: 44%;">
+      <div class="container">
+        <h2>Home Theater Newly Launched</h2>
+        <p class="title">₹ 720.00</p>
+      
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="ha5.webp"class="center" style="width: 60%;">
+      <div class="container">
+        <h2>Mini Hi-Fi system</h2>
+        <p class="title">₹ 720.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="ha6.jpeg" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>I kall Vox Home Theatre</h2>
+        <p class="title">₹ 720.00</p>
+      
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="ha7.jpeg"class="center" style="width: 43%;">
+      <div class="container">
+        <h2>Govo Gosurround 945</h2>
+       
+        <p class="title">₹ 720.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="ha8.jpeg"class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Wireless bluetooth </h2>
+        
+        <p class="title">₹ 720.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div> <div class="column">
+    <div class="card">
+      <img src="ha9.jpeg"  class="center" style="width: 25%;">
+      <div class="container">
+        <h2>Polk Audio Sign wireless Bluetooth</h2>
+        
+        <p class="title">₹ 720.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="ha10.jpeg" class="center" style="width: 25%;">
+      <div class="container">
+        <h2>Bowers & wilkins S2 606 </h2>
+        
+        <p class="title">₹ 720.00.</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+</body>
+</html>

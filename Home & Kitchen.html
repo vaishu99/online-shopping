@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home and Kitchen</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.hk-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+ 
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.he{
+  padding-left: 37%;
+}
+.home{
+  padding-left: 50%;
+  color: white;
+  
+  text-decoration: none;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+</head>
+<body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+<div class="hk-section">
+  <h1 class="he">Home and Kitchen<a href="index.html" class="home">Home</a></h1>
+  </div>
+<div class="row">
+<div class="column">
+    <div class="card">
+      <img src="H&K-1.jpg" class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Garlic gritter</h2>
+        <p class="title">₹ 99.00</p>        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+        <div id="snackbar">Added to Cart Successfully.</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-2.jpg" class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Storing Bukets</h2>
+        <p class="title">₹ 500.00</p>
+              <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-3.jpg" class="center" style="width: 55%;">
+      <div class="container">
+        <h2>Nonstick Pans</h2>
+        <p class="title">₹ 1999.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-4.webp" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Fruit basket</h2>
+        <p class="title">₹ 999.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-5.webp" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Bitter</h2>
+        <p class="title">₹ 2999.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-6.jpg" class="center" style="width: 40%;">
+      <div class="container"onclick="myFunction()">
+        <h2>Mixer</h2>
+        <p class="title">₹ 5789.00</p>
+        
+        <p><button class="button">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-7.jpg" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Wall Hanging</h2>
+        <p class="title">₹ 1999.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-8.webp" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Artificial pot</h2>
+        <p class="title">₹ 899.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div> <div class="column">
+    <div class="card">
+      <img src="H&K-9.jpg"  class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Buddha Statue</h2>
+        <p class="title">₹ 689.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="H&K-10.jpg" class="center" style="width: 35%;">
+      <div class="container">
+        <h2>Handwash assesories</h2>
+        <p class="title">₹ 1500.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="H&K-11.webp" class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Dinner Set</h2>
+        <p class="title">₹ 600.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-12.webp" class="center" style="width: 33%;">
+      <div class="container">
+        <h2>Ceramic Dinner set</h2>
+        <p class="title">₹ 4999.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-13.jpg" class="center" style="width: 33%;">
+      <div class="container">
+        <h2>Mirror</h2>
+        <p class="title">₹ 190.00</p>       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="H&K-14.jpg" class="center" style="width: 37%;">
+      <div class="container">
+        <h2>Wash basin black</h2>
+        <p class="title">₹ 5999.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="H&K-15.jpeg" class="center" style="width: 36%;">
+      <div class="container">
+        <h2>Wash Basin White</h2>
+        <p class="title">₹ 7999.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+
+ 
+</div>
+</body>
+</html>

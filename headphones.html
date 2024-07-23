@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Headphones</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.h-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+ 
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.he{
+  padding-left: 37%;
+}
+.home{
+  padding-left: 50%;
+  color: white;
+  size: 5px;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+<div class="h-section">
+  <h1 class="he">Headphones<a href="Electronics.html" class="home">Back</a></h1>
+  
+  </div>
+<div class="row">
+<div class="column">
+    <div class="card">
+      <img src="h1.jpeg" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Mrs Simin P47</h2>
+        <p class="title">₹ 490.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="h2.jpg" class="center" style="width: 27%;">
+      <div class="container">
+        <h2>iclever kids Headphones</h2>
+        <p class="title">₹ 599.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+        <div id="snackbar">Added to Cart Successfully.</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="h3.jpg" class="center" style="width: 24%;">
+      <div class="container">
+        <h2>Sony Wireless Headphones</h2>
+        <p class="title">₹ 499.00</p>
+    
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="h4.jpg" class="center" style="width: 37%;">
+      <div class="container">
+        <h2>Sony Wireless Headphones</h2>
+        <p class="title">₹ 499.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="h5.webp"class="center" style="width: 48%;">
+      <div class="container">
+        <h2>Zebronics jet Pro</h2>
+        <p class="title">₹ 590.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="h6.png" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Oneplus Bullets Wireless Bluetooth</h2>
+        <p class="title">₹ 390.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="h7.webp" class="center" style="width: 64%;">
+      <div class="container">
+        <h2>Digiclues Nb231</h2>
+        <p class="title">₹ 199.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="h8.webp"class="center" style="width: 55%;">
+      <div class="container">
+        <h2>JBL tune 520BT Wireless</h2>
+        <p class="title">₹ 540.00</p>
+      
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div> <div class="column">
+    <div class="card">
+      <img src="h9.avif"  class="center" style="width: 50%;">
+      <div class="container">
+        <h2>Noise Buds</h2>
+        <p class="title">₹ 890.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="h10.jpg"  class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Noise Buds</h2>
+        <p class="title">₹ 890.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  
+ 
+</div>
+</body>
+</html>
