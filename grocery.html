@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grocery</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.g-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+ 
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.he{
+  padding-left: 37%;
+}
+.home{
+  padding-left: 50%;
+  color: white;
+  
+  text-decoration: none;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+</head>
+<body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+<div class="g-section">
+  <h1 class="he">Grocery<a href="index.html" class="home">Home</a></h1>
+  </div>
+<div class="row">
+<div class="column">
+    <div class="card">
+      <img src="g1.jpeg" class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Oreo Biscuit</h2>
+        <p class="title">₹ 30.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+        <div id="snackbar">Added to Cart Successfully.</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g2.jpg"class="center" style="width: 29%;">
+      <div class="container">
+        <h2>Surfexel Liquid</h2>
+        <p class="title">₹ 300.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g3.jpg"class="center" style="width: 29%;">
+      <div class="container">
+        <h2>Corn Flakes</h2>
+        <p class="title">₹ 450.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g4.jpeg" class="center" style="width: 17%;">
+      <div class="container">
+        <h2>Saffola oats</h2>
+        <p class="title">₹ 340.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g5.jpeg" class="center" style="width: 20%;">
+      <div class="container">
+        <h2>Rock salt</h2>
+        <p class="title">₹ 30.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g6.jpeg" class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Madhur Sugar</h2>
+        <p class="title">₹ 600.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g7.jpeg"class="center" style="width: 40%;">
+      <div class="container">
+        <h2>Pizza Flakes</h2>
+        <p class="title">₹ 25.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g8.jpeg" class="center" style="width: 35%;">
+      <div class="container">
+        <h2>Dawat rice</h2>
+        <p class="title">₹ 780.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div> <div class="column">
+    <div class="card">
+      <img src="g9.jpeg" class="center" style="width: 35%;">
+      <div class="container">
+        <h2>Basmati Rice</h2>
+        <p class="title">₹ 567.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g10.jpeg" class="center" style="width: 42%;">
+      <div class="container">
+        <h2>Udad Dal</h2>
+        <p class="title">₹ 50.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="g11.jpeg" class="center" style="width: 39%;">
+      <div class="container">
+        <h2>Masoor dal</h2>
+        <p class="title">₹ 50.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g12.jpg" class="center" style="width: 38%;">
+      <div class="container">
+        <h2>Channa Dal</h2>
+        <p class="title">₹ 70.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g13.jpeg" class="center" style="width: 38%;">
+      <div class="container">
+        <h2>Mirchi powder</h2>
+        <p class="title">₹ 45.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g14.jpeg" class="center" style="width: 37%;">
+      <div class="container">
+        <h2>Meat masala</h2>
+        <p class="title">₹ 90.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="g15.jpeg" "class="center" style="width: 27%;">
+      <div class="container">
+        <h2>Custurd Powder</h2>
+        <p class="title">₹ 80.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+
+ 
+</div>
+</body>
+</html>

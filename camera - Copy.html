@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Camera and Assesories</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.c-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+ 
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.he{
+  padding-left: 37%;
+}
+.home{
+  padding-left: 50%;
+  color: white;
+  size: 5px;
+  text-decoration: none;
+}
+
+/* Add From here for message */
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+/* upto here */
+
+</style>
+</head>
+<body>
+
+  <!-- add here also -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+
+    <!-- upto here -->
+<div class="c-section">
+  <h1 class="he">Camera and Assesories<a href="Electronics.html" class="home">Back</a></h1>
+ 
+  </div>
+<div class="row">
+<div class="column">
+    <div class="card">
+      <img src="c1.jpeg" alt="John"class="center" style="width: 36%;">
+      <div class="container">
+        <h2>Canon 6D Mark 2 body-Cameras</h2>
+        <p class="title">₹ 720.00</p>
+       
+        <p><button class="button"  onclick="myFunction()">Add to Cart</button></p>
+        <!-- here also -->
+        <div id="snackbar">Added to Cart Successfully.</div>
+        <!-- upto here -->
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="c2.jpeg" alt="John"class="center" style="width: 25%;">
+      <div class="container">
+        <h2>Mini Camera</h2>
+        <p class="title">₹ 799.00</p>
+       
+        <p><button class="button" onclick="myFunction()" >Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="c3.jpeg" alt="John"class="center" style="width: 19%;">
+      <div class="container">
+        <h2>Panasonic AG-AC130 Digital Vedio Camera</h2>
+        <p class="title">₹ 856.00</p>
+       
+        <p><button class="button" onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="c4.jpeg" alt="John"class="center" style="width: 45%;">
+      <div class="container">
+        <h2>Leica IIC Vintage Camera</h2>
+        <p class="title">₹ 899.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="c5.jpeg" alt="John"class="center" style="width: 30%;">
+      <div class="container">
+        <h2>Instax mini 12 Camera</h2>
+        <p class="title">₹ 799.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="c6.jpeg" alt="John"class="center" style="width: 44%;">
+      <div class="container">
+        <h2>Sony Alpha ILCE-6400L Camera</h2>
+        <p class="title">₹ 999.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="c7.webp" alt="John"class="center" style="width: 24%;">
+      <div class="container">
+        <h2>Acuvar 18MP Megapixel Digital Camera </h2>
+        <p class="title">₹ 1199.00</p>
+        
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="c8.jpeg" alt="John"class="center" style="width: 24%;">
+      <div class="container">
+        <h2>Digital Platinum DPTR 880 PRO Camera</h2>
+        <p class="title">₹ 899.00</p>
+     
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div> <div class="column">
+    <div class="card">
+      <img src="c9.jpeg" alt="John" class="center" style="width: 34%;">
+      <div class="container">
+        <h2>Shinetel 72-inch Flite</h2>
+        <p class="title">₹ 799.00</p>
+       
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="c10.jpeg" alt="John" class="center" style="width: 24%;">
+      <div class="container">
+        <h2>Brain Freezer Flexible Octopus Style mini </h2>
+        <p class="title">₹ 899.00</p>
+      
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+</html>
