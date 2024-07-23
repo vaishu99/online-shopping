@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Women's Mackup</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.w-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+ 
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.he{
+  padding-left: 37%;
+}
+.home{
+  padding-left: 50%;
+  color: white;
+  size: 5px;
+  text-decoration: none;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+</head>
+<body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+<div class="w-section">
+  <h1 class=he"">Women's Mackup<a href="women-section.html" class="home">Back</a></h1>
+  </div>
+<div class="row">
+<div class="column">
+    <div class="card">
+      <img src="mk1.jpg" class="center" style="width: 29%;">
+      <div class="container">
+        <h2>Maybelline New York Colossal Kajal</h2>
+        <p class="title">₹ 340.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+        <div id="snackbar">Added to Cart Successfully.</div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk2.jpg" class="center" style="width: 41%;">
+      <div class="container">
+        <h2>FacesCcanada Magneteyes Kajal - Black</h2>
+        <p class="title">₹ 401.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk3.jpg" class="center" style="width: 67%;">
+      <div class="container">
+        <h2>Lakme Sun Expert Ultra Matte Spf 40 Pa+++ Compact</h2>
+        <p class="title">₹ 599.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk4.jpg"class="center" style="width: 19%;">
+      <div class="container">
+        <h2>Lakme Invisible Finish SPF 8 Liquid Foundation</h2>
+        <p class="title">₹ 899.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk5.jpg" class="center" style="width: 20%;">
+      <div class="container">
+        <h2>Maybelline New York Full Coverage Concealer, Matte & Poreless Ultra Blendable</h2>
+        <p class="title">₹ 599.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk6.jpg"class="center" style="width: 48%;">
+      <div class="container">
+        <h2>LAKMÉ Insta Liquid Semi Matte Eye Liner</h2>
+        <p class="title">₹ 599.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk7.jpg"class="center" style="width: 76%;">
+      <div class="container">
+        <h2>Lakme 9 to 5 Eyeshadow Palette</h2>
+        <p class="title">₹ 499.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk8.jpg"class="center" style="width: 58%;">
+      <div class="container">
+        <h2>LAKMÉ Radiance Complexion Compact Powder</h2>
+        <p class="title">₹ 599.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+
+  </div> <div class="column">
+    <div class="card">
+      <img src="mk9.jpg"  class="center" style="width: 22%;">
+      <div class="container">
+        <h2>Kama Ayurveda Rose and Jasmine Body Cleanser</h2>
+        <p class="title">₹ 399.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk10.jpg"  class="center" style="width: 64%;">
+      <div class="container">
+        <h2>SUGAR Smudge Me Not Mini Matte Liquid Lipstick </h2>
+        <p class="title">₹ 499.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="mk11.jpg" class="center" style="width: 29%;">
+      <div class="container">
+        <h2>Lakme 9 to 5 Primer and Matte Lip Color</h2>
+        <p class="title">₹ 699.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk12.jpg" class="center" style="width: 52%;">
+      <div class="container">
+        <h2>Maybelline New York Fit Me Matte Foundation</h2>
+        <p class="title">₹ 499.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk13.jpg" class="center" style="width: 36%;">
+      <div class="container">
+        <h2>Kama Ayurveda</h2>
+        <p class="title">₹ 399.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk14.jpg"class="center" style="width: 33%;">
+      <div class="container">
+        <h2>SUGAR Matte as Hell Crayon Lipsticks</h2>
+        <p class="title">₹ 299.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="mk15.jpg" class="center" style="width: 58%;">
+      <div class="container">
+        <h2>Kama Ayurveda Rose And Jasmine Face Care Box</h2>
+        <p class="title">₹ 299.00</p>
+        <p><button class="button"onclick="myFunction()">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+
+
+ 
+</div>
+</body>
+</html>
